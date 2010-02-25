@@ -7,7 +7,6 @@ import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.util.Log;
 
 import com.sudarmuthu.android.taskmanager.tasks.Task;
 import com.sudarmuthu.android.taskmanager.util.ObjectSerializer;
@@ -26,7 +25,7 @@ public class TaskManagerApplication extends Application {
 			currentTasks = new ArrayList<Task>();
 		}
 
-		//		load tasks from preference		
+		//	load tasks from preference		
 		SharedPreferences prefs = getSharedPreferences(SHARED_PREFS_FILE, Context.MODE_PRIVATE);
 
 		try {

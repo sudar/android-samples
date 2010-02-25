@@ -4,24 +4,32 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView
-	android:id="@+id/tasks_title"  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/tasks"
-    />
-<Button  
-	android:id="@+id/add_button"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/add_task"
-    android:layout_alignParentBottom="true"
-    />
-<TextView  
-	android:id="@+id/task_list"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content"
-    android:layout_below="@id/tasks_title"
-    android:layout_above="@id/add_button" 
-    />
+	<ListView  
+		android:id="@id/android:list"
+	    android:layout_width="fill_parent" 
+	    android:layout_above="@id/add_button" 
+	    android:layout_height="fill_parent"/>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id = "@id/android:empty"
+		android:text="@string/no_tasks"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_above="@id/add_button"
+	/>
+	<Button  
+		android:id="@+id/add_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:text="@string/add_task"/>
+	    />
+	<Button
+		android:id="@+id/remove_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_toRightOf="@id/add_button"
+		android:text="@string/remove_completed_tasks"
+		/>
 </RelativeLayout>

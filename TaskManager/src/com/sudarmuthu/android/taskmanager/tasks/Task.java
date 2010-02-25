@@ -9,6 +9,7 @@ public class Task implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private String name;
+	private boolean complete;
 	
 	public Task(String taskName) {
 		name = taskName;
@@ -24,5 +25,17 @@ public class Task implements Serializable{
 	
 	public String toString() {
 		return name;
+	}
+
+	public boolean isComplete() {
+		return complete;
+	}
+
+	public void setComplete(boolean complete) {
+		this.complete = complete;
+	}
+	
+	public void toggleComplete() {
+		complete = !complete;
 	}	
 }
