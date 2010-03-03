@@ -10,6 +10,8 @@ public class Task implements Serializable{
 	
 	private String name;
 	private boolean complete;
+
+	private long id;
 	
 	public Task(String taskName) {
 		name = taskName;
@@ -37,5 +39,13 @@ public class Task implements Serializable{
 	
 	public void toggleComplete() {
 		complete = !complete;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public long getId() {
+		return id;
 	}	
 }

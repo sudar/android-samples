@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import com.sudarmuthu.android.taskmanager.adapters.TaskListAdapter;
+import com.sudarmuthu.android.taskmanager.tasks.Task;
 
 public class ViewTasksActivity extends ListActivity {
     private Button addButton;
@@ -37,10 +38,13 @@ public class ViewTasksActivity extends ListActivity {
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
 		adapter.toggleTaskCompleteAtPosition(position);
+		Task t = adapter.getItem(position);
+		app.saveTask(t);
 	}
 	
 	protected void removeCompletedTasks() {
-		adapter.removeCompletedTasks();
+		Long[] ids = adapter.removeCompletedTasks();
+		app.deleteTasks(ids);
 	}
 	
 	private void setUpViews() {
