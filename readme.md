@@ -30,6 +30,6 @@ This sample project explains how to use [Array Adapter and List view](http://sud
 
 Explanation about the code can be found in the [corresponding blog entry](http://sudarmuthu.com/blog/using-arrayadapter-and-listview-in-android-applications) in my blog.
 
-# License
+## License
 
 All code samples are released under GPL license. So feel free to use them in your project.
