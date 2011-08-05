@@ -8,11 +8,12 @@
 <TextView  
     android:layout_width="wrap_content" 
     android:layout_height="wrap_content" 
-    android:text="@string/title"
+    android:layout_gravity="center" android:gravity="center"
+    android:layout_marginBottom="15dip" android:layout_marginTop="15dip" android:text="@string/title"
     />
 <Button 
 	android:id="@+id/dialer_button"  
-    android:layout_width="fill_parent" 
+    android:layout_width="wrap_content" 
     android:layout_height="wrap_content"
     android:text="@string/dialer" 
 />    
