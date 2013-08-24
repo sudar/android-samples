@@ -12,17 +12,21 @@ public class DialerActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Testing again
         setContentView(R.layout.main);
 
-        // Add a Button	
+        // Add a Button
         Button dialerButton = (Button)findViewById(R.id.dialer_button);
         dialerButton.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				//open the phone dialer on clicking the button
 				Intent intent = new Intent(Intent.ACTION_DIAL);
 				startActivity(intent);
+				// Testing new git set up. Please ignore :)
+				
+				/// github... testing...24/8/2013
 			}
 		});
     }
