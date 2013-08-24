@@ -25,6 +25,8 @@ public class DialerActivity extends Activity {
 				Intent intent = new Intent(Intent.ACTION_DIAL);
 				startActivity(intent);
 				// Testing new git set up. Please ignore :)
+				
+				/// github... testing...24/8/2013
 			}
 		});
     }
