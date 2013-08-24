@@ -12,6 +12,7 @@ public class DialerActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Testing again
         setContentView(R.layout.main);
 
         // Add a Button
